@@ -1,8 +1,5 @@
 <!-- Blog Sidebar Widgets Column -->
 <div class="col-md-4">
- 
-
-
 
 
   <!-- Blog Search Well -->
@@ -14,47 +11,33 @@
         <span class="input-group-btn">
           <input name="submit" class="btn btn-default" type="submit">
           <span class="glyphicon glyphicon-search"></span>
-          
+
         </span>
       </div>
       <!-- /.input-group -->
     </form>
   </div>
 
-
-
-
-
-
-
-
-
   <!-- Login Form -->
-  <div class="well">
-    
-<!-- 
-                                  <h4>Logged in as </h4>
-                                  <a href="includes/logout.php" class='btn btn-warning'>Logout</a>
-                                -->
-                                
+<div class="well">
 
-                                <h4>Login</h4>
-                                <form action="includes/login.php" method="post">
-                                  <div class="form-group">
-                                    <input type="text" name="username" class="form-control" placeholder="Username">
-                                  </div>
-                                  <div class="input-group">
-                                    <input type="password" name="password" class="form-control" placeholder="Password">
-                                    <span class="input-group-btn">
-                                      <button class="btn btn-primary" type="submit" name="login">Login</button>
-                                    </span>
-                                  </div>
-                                  <!-- /.input-group -->
-                                </form>
+      <!-- <h4>Logged in as </h4>
+<a href="includes/logout.php" class='btn btn-warning'>Logout</a>-->
+<h4>Login</h4>
+  <form action="includes/login.php" method="post">
+      <div class="form-group">
+        <input type="text" name="username" class="form-control" placeholder="Enter Username">
+      </div>
 
-
-                                
-                              </div>
+      <div class="input-group">
+        <input type="password" name="password" class="form-control" placeholder="Enter Password">
+        <span class="input-group-btn">
+           <button class="btn btn-primary" type="submit" name="login">Login</button>
+        </span>
+      </div>
+                <!-- /.input-group -->
+  </form>
+</div>
 
                               <!-- Blog Categories Well -->
                               <div class="well">
@@ -72,13 +55,14 @@
                                       <?php
                                       while($row = mysqli_fetch_assoc($select_categories_sidebar)){
                                         $cat_title = $row['cat_title'];
+                                        $cat_id = $row['cat_id'];
 
-                                        echo "<li><a href='#'>{$cat_title}<?a></li>";
+                                        echo "<li><a href='category.php?category=$cat_id'>{$cat_title}</a></li>";
 
                                       }
                                       ?>
                                     </ul>
-                                    
+
                                     <!-- /.col-log-6-->
                                     <!-- <div class ="col-log-6">
                                       <ul class="list-unstyled">

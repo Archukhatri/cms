@@ -9,7 +9,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.php">Start CMS</a>
+                <a class="navbar-brand" href="index.php">CMS Front</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -27,7 +27,7 @@
                         echo "<li><a href='#'>{$cat_title}<?a></li>";
 
                     }
-
+                       
 
                     ?>
 
@@ -35,20 +35,14 @@
 
 
 
+  <a class="navbar-brand" href="admin"  align = right>Admin</a>
 
 
-
-               
-                   <!--  <li class=''>
+               <!-- 
+                    <li class=''>
                         <a href="category.php?category=">Category</a>
-                    </li>
-                    
-                    
-                    <li>
-                        <a href="admin">Admin</a>
-                    </li> 
-
-                  
+                    </li> -->
+         <!-- 
                     <li class=''>
                         <a href="registration.php">Registration</a>
                     </li>
@@ -57,7 +51,12 @@
                     </li> -->
 
 
-
+<!-- <div>
+                      <li>
+                        <a href="admin" style="text-align:center">Admin</a>
+                    </li> 
+</div> -->
+         
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
